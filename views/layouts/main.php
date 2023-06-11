@@ -49,6 +49,10 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
           <li><a href="<?= Yii::$app->urlManager->createUrl(['site/index']) ?>" class="active">Home</a></li>
           <li><a href="<?= Yii::$app->urlManager->createUrl(['site/about']) ?>" class="active">About</a></li>
           <li><a href="<?= Yii::$app->urlManager->createUrl(['site/services']) ?>" class="active">Services</a></li>
+              <ul class="submenu">
+                      <li><a href="<?=Url::to(['mahasiswa/index'])?>">Mahasiswa</a></li>
+                  </ul>
+              </li>
           <li><a href="<?= Yii::$app->urlManager->createUrl(['site/pricing']) ?>" class="active">Pricing</a></li>
           <li><a href="<?= Yii::$app->urlManager->createUrl(['site/contact']) ?>" class="active">Contact</a></li>
           <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li>
